@@ -1,0 +1,112 @@
+/* Reseta a cor de fundo e o padding do body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Definindo uma cor de fundo suave */
+    margin: 0;
+    padding: 20px;
+    color: rgb(0, 0, 0); /* Cor do texto */
+    text-align: center;
+}
+
+/* Container de botões com espaçamento */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaço entre os botões */
+}
+
+/* Estilo para os botões */
+.button {
+    background-color: #085519;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #002c11;
+}
+
+/* Estilos da faixa que contém os retângulos */
+.faixa {
+    display: grid; /* Usando CSS Grid */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Retângulos em colunas responsivas */
+    gap: 20px; /* Espaço entre os retângulos */
+    background-color: #093803;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 0 auto; /* Centraliza a faixa horizontalmente */
+    max-width: 1200px; /* Limita a largura máxima da faixa */
+    width: 100%; /* Garante que a faixa ocupe a largura disponível */
+}
+
+/* Estilos para os retângulos */
+.retangulo {
+    background-color: #c5c5c5;
+    color: #333;
+    padding: 14px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Garante que o conteúdo será centralizado vertical e horizontalmente */
+    height: auto; /* Permite que os retângulos se ajustem ao tamanho do conteúdo */
+    box-sizing: border-box; /* Garante que o padding e a borda não distorçam o tamanho */
+}
+
+/* Estilo das imagens dentro dos retângulos */
+.retangulo img {
+    width: 100%;
+    max-width: 300px; /* Define um tamanho máximo para a imagem */
+    height: auto;
+    border-radius: 5px;
+    object-fit: contain; /* Garante que a imagem mantenha suas proporções dentro do retângulo */
+    margin-bottom: 15px; /* Espaçamento entre a imagem e o texto */
+}
+
+/* Estilo dos links dentro dos retângulos */
+.link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #174900;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.link:hover {
+    background-color: #002b12;
+}
+
+/* Responsividade */
+
+/* Para telas médias (como tablets e laptops pequenos) */
+@media (max-width: 1024px) {
+    .retangulo {
+        font-size: 18px; /* Reduz a fonte em telas menores */
+    }
+}
+
+/* Para telas pequenas (como celulares) */
+@media (max-width: 768px) {
+    .retangulo {
+        font-size: 16px; /* Ajusta o tamanho da fonte */
+    }
+    .faixa {
+        grid-template-columns: 1fr; /* Empilha os retângulos em uma coluna */
+    }
+    .retangulo img {
+        width: 100%; /* As imagens ocupam 100% da largura em telas pequenas */
+        max-width: none; /* Remove limite de largura */
+    }
+}

@@ -49,7 +49,7 @@ body {
     margin: 20px;
     padding: 10px 20px;
     background-color: #085519;
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     border-radius: 5px;
     font-size: 1.2em;
@@ -68,15 +68,16 @@ body {
 
 /* Estilo da faixa verde */
 .faixa {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-    background-color: #093803;
-    padding: 20px;
-    border-radius: 8px;
-    margin: 0 auto; /* Centraliza a faixa */
-    max-width: 900px; /* Limita a largura máxima */
-    width: 100%; /* Garante que ocupe 100% da largura disponível */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  background-color: #093803;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 10px auto; /* Centraliza a faixa e adiciona margem vertical */
+  width: -moz-fit-content;
+  width: fit-content; /* Ajusta a largura ao conteúdo */
+  max-width: 50%; /* Impede que ultrapasse a largura da tela */
 }
 
 /* Estilos para os retângulos */
@@ -97,7 +98,7 @@ body {
 
 /* Estilo das imagens dentro dos retângulos */
 .retangulo img {
-    width: 100%;
+    width: 70%;
     border-radius: 5px;
     object-fit: contain;
     margin-bottom: 15px;
@@ -132,6 +133,7 @@ body {
     .retangulo img {
         width: 100%;
     }
+
 }
 
 
@@ -154,7 +156,7 @@ body {
 
                 <img src="assets/images/billiej.jfif">
                 <p>Músico americano</p>
-                <a class="link" href="https://pt.wikipedia.org/wiki/Billie_Joe_Armstrong" target="_blank">Saiba Mais</a>
+                <a class="link" href="https://greenday.fm/band/billie-joe-armstrong/" target="_blank">Saiba Mais</a>
             </div>
         
             <div class="retangulo">
@@ -162,7 +164,7 @@ body {
                 </h3>
                 <img src="assets/images/trcool.webp">
                 <p>Músico norte-americano</p>
-                <a class="link" href="https://pt.wikipedia.org/wiki/Tr%C3%A9_Cool" target="_blank">Saiba Mais</a>
+                <a class="link" href="https://greenday.fm/band/tre-cool/" target="_blank">Saiba Mais</a>
             </div>
         
             <div class="retangulo">
@@ -170,14 +172,10 @@ body {
                 </h3>
                 <img src="assets/images/miked.jpg">
                 <p>Músico norte-americano</p>
-                <a class="link" href="https://pt.wikipedia.org/wiki/Mike_Dirnt" target="_blank">Saiba Mais</a>
+                <a class="link" href="https://greenday.fm/band/mike-dirnt/" target="_blank">Saiba Mais</a>
             </div>
         </div>
     </div>
 
 </body>
-
-
-
-
 </html>
